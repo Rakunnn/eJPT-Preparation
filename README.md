@@ -17,6 +17,7 @@ All written is based by experience and knowledge. All written here are my guides
 - Start solving tryhackme Advent of Cyber Day 3 box.
 
 
-### **DAY 29** 
-- Exam day
+### **Exam Day** 
+- Took the exam 3PM, finish around 10PM.
+
 
