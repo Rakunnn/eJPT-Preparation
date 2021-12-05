@@ -28,16 +28,16 @@ root@kali~$ nmap --script "type of scanner" <IP>
 root@kali~$gobuster dir -u http://<IP> -w <wordlist>
 ```
 ## **Web vulnerability scanning**
-```
+```console
 root@kali~$nikto -h <IP>
 ```
 ## **Cross Site Scripting**
-```
+```console
 - Look for any input forms.
 - use <script>alert(1)</script>
 ```
 ## **SQL Injection**
-```
+```console
 - Look for any input forms.
 - put "'" after a string, SQL error message prompt. 
 
@@ -56,7 +56,7 @@ root@kali~$sqlmap -u <url> --tables
 root@kali~$sqlmap -u <url> -D <database name> -T <table name> --dump
 ```
 ## **Windows Shares Enumeration**
-```
+```console
 enumerate shared directory.
 
 root@kali~$smbclient -L //ip 
