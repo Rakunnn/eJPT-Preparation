@@ -11,7 +11,7 @@ root@kali~$nmap -sn <ip/subnet> | grep "report for" | cut -d " " -f 5 > ip.txt
 ```
 ## **Scan all IP address**
 ```console
-root@kali~$ports=$(nmap -p- --min-rate=1000 -T4 <ip> | grep ^[0-9] | cut -d ‘/’ -f 1 | tr ‘\n’ ‘,’ | sed s/,$//)
+root@kali~$ ports=$(nmap -p- --min-rate=1000 -T4 $IP | grep ^[0-9] | cut -d "/" -f 1 | tr "\n" "," | sed s/,$//)
 root@kali~$nmap -sV -sC -p$ports <ip> -oG <name of file>
 ```
 
